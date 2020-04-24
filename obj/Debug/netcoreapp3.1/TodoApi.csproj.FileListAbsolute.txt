@@ -2,7 +2,6 @@ C:\Users\Priyanka\source\repos\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.MvcAppli
 C:\Users\Priyanka\source\repos\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.AssemblyInfoInputs.cache
 C:\Users\Priyanka\source\repos\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.AssemblyInfo.cs
 C:\Users\Priyanka\source\repos\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.pdb
-C:\Users\Priyanka\source\repos\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.csprojAssemblyReference.cache
 C:\Users\Priyanka\source\repos\TodoRepo\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Priyanka\source\repos\TodoRepo\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Priyanka\source\repos\TodoRepo\bin\Debug\netcoreapp3.1\project.razor.json
