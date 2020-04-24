@@ -1,0 +1,4 @@
+C:\Users\Priyanka\source\repos\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.csprojAssemblyReference.cache
+C:\Users\Priyanka\source\repos\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Priyanka\source\repos\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.AssemblyInfoInputs.cache
+C:\Users\Priyanka\source\repos\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.AssemblyInfo.cs
