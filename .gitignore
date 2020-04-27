@@ -64,6 +64,7 @@ StyleCopReport.xml
 *_p.c
 *_h.h
 *.ilk
+*.suo
 *.meta
 *.obj
 *.iobj
@@ -337,6 +338,7 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+
 
 # BeatPulse healthcheck temp database
 healthchecksdb
