@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
-public class TodoItem
-{
+using TodoApi.Models;
+
+public class TodoItem { 
 
     [DatabaseGenerated(DatabaseGeneratedOption.None)]
     public long Id { get; set; }
