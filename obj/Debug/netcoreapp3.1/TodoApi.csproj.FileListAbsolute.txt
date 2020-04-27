@@ -135,4 +135,3 @@ E:\todo\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.genruntimeconfig.cache
 E:\todo\TodoRepo\bin\Debug\netcoreapp3.1\MediatR.dll
 E:\todo\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.csproj.CoreCompileInputs.cache
 E:\todo\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.MvcApplicationPartsAssemblyInfo.cache
-E:\todo\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.csprojAssemblyReference.cache
