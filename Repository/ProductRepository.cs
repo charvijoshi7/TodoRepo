@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+
 using System.Linq;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using TodoApi.Models;
 
 namespace TodoApi.Repository
@@ -15,17 +18,22 @@ namespace TodoApi.Repository
         {
             _context = context;
         }
-        public async Task<ActionResult<IEnumerable<TodoItem>>> GetItems()
+        public async Task<List<TodoItem>> GetAllitem()
         {
             return await _context.TodoItem.ToListAsync();
 
         }
-        public async void AddItem(TodoItem todoItem)
+        public async Task<TodoItem> GetItemById(long id)
+        {
+            return await _context.TodoItem.FindAsync(id);
+        }
+        public async Task<TodoItem> AddProudct(TodoItem todoItem)
         {
             _context.TodoItem.Add(todoItem);
             await _context.SaveChangesAsync();
+            return todoItem;
         }
-        public async Task<ActionResult<TodoItem>> DeleteItem(long id)
+        public async Task<TodoItem> DeleteItem(long id)
         {
             var todoItem = await _context.TodoItem.FindAsync(id);
             if(todoItem==null)
@@ -37,14 +45,6 @@ namespace TodoApi.Repository
             return todoItem;
         }
 
-        public async Task<ActionResult<TodoItem>> FindtemById(long id)
-        {
-             return await _context.TodoItem.FindAsync(id);
-        }
-        private bool TodoItemExists(long id)
-        {
-            return _context.TodoItem.Any(e => e.Id == id);
-        }
 
     }
 }

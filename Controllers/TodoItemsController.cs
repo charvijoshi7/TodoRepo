@@ -6,7 +6,9 @@ using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using TodoApi.Coomands;
 using TodoApi.Models;
+using TodoApi.Query;
 using TodoApi.Repository;
 
 namespace TodoApi.Controllers
@@ -17,56 +19,44 @@ namespace TodoApi.Controllers
     {
         private readonly TodoContext _context;
         private readonly ProductRepository _productRepository;
+        private readonly IMediator _mediator;
 
-        public TodoItemsController(TodoContext context, ProductRepository productRepository)
+        public TodoItemsController(TodoContext context, IMediator mediator, ProductRepository productRepository)
         {
             _context = context;
             _productRepository = productRepository;
-
+            _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
         }
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItems()
+        public async Task<IActionResult> GetAllOrders()
         {
-           
-            return await _productRepository.GetItems();
-
+            var query = new GetAllProudctDetail();
+            var result = await _mediator.Send(query);
+            return Ok(result);
         }
-
-        // GET: api/TodoItems/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TodoItem>> GetTodoItem(long id)
+        public async Task<IActionResult> GetById(int id)
         {
-           
-            var todoItem = await _productRepository.FindtemById(id);
-            if (todoItem==null)
-               {
-                return NotFound();
-               }
-
-            return todoItem;
+            var product = await _mediator.Send(new GetOrderByIdQuery(id));
+            return product != null ? (IActionResult)Ok(product) : NotFound();
         }
 
         [HttpPost]
-        public async Task<ActionResult<TodoItem>> PostTodoItem(TodoItem todoItem)
+        public async Task<IActionResult> PostTodoItem(TodoItem todoItem)
         {
-            _productRepository.AddItem(todoItem);
-            return CreatedAtAction(nameof(GetTodoItem), new { id = todoItem.Id }, todoItem);
+            CreateProudctCommand command = new CreateProudctCommand(todoItem);
+            var result= await _mediator.Send(command);
+           return CreatedAtAction("GetById", new { id = result.Id }, result);
+           
         }
-
-        // DELETE: api/TodoItems/5
+        
         [HttpDelete("{id}")]
         public async Task<ActionResult<TodoItem>> DeleteTodoItem(long id)
-        { 
-            if (await _productRepository.DeleteItem(id) == null)
-            {
-                return NotFound();
-            }
+        {
+            DeleteProductCommand command = new DeleteProductCommand(id);
+            var result = await _mediator.Send(command);
             return await _productRepository.DeleteItem(id);
         }
 
-        private bool TodoItemExists(long id)
-        {
-            return _context.TodoItem.Any(e => e.Id == id);
-        }
     }
 }

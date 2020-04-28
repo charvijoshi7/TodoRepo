@@ -13,6 +13,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using TodoApi.Models;
 using TodoApi.Repository;
+using MediatR;
+using AutoMapper;
 
 namespace TodoApi
 {
@@ -31,7 +33,11 @@ namespace TodoApi
             services.AddDbContext<TodoContext>();
             services.AddDbContext<ProductRepository>();
             services.AddControllers();
+            services.AddMediatR(typeof(Startup));
+            //services.AddTransient(typeof(IPipelineBehavior<,>));
+            // services.AddScope<ProductRepository>();
         }
+       
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
