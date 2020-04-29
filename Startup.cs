@@ -16,6 +16,7 @@ using TodoApi.Repository;
 using MediatR;
 using AutoMapper;
 using TodoApi.Todo.Data.Repsoitories;
+using TodoApi.ToDo.Api.Controllers;
 
 namespace TodoApi
 {
@@ -32,11 +33,33 @@ namespace TodoApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<TodoContext>();
-            services.AddDbContext<IProductRepository>();
+            
+            services.AddScoped<IProductRepsoitory, ProductRepository>();
             services.AddControllers();
             services.AddMediatR(typeof(Startup));
-            services.AddScoped<IProductRepsoitory,IProductRepository>();
-            // services.AddScope<ProductRepository>();
+            
+
+           /* services.AddMvc()
+                    .ConfigureApiBehaviorOptions(options =>
+                    {
+                        options.InvalidModelStateResponseFactory = context =>
+                        {
+                            var problems = new CustomBadRequest(context);
+                            return new BadRequestObjectResult(problems);
+                        };
+                    });
+            services.Configure<ApiBehaviorOptions>(a =>
+            {
+                a.InvalidModelStateResponseFactory = context =>
+                {
+                    var problemDetails = new CustomBadRequest(context);
+                    return new BadRequestObjectResult(problemDetails)
+                    {
+                        ContentTypes = { "application / problem + json”, “application / problem + xml"}
+                    };
+                };
+            });*/
+            
         }
        
 
@@ -53,6 +76,7 @@ namespace TodoApi
             app.UseRouting();
 
             app.UseAuthorization();
+
 
             app.UseEndpoints(endpoints =>
             {

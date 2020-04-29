@@ -12,10 +12,10 @@ using TodoApi.Todo.Data.Repsoitories;
 
 namespace TodoApi.Repository
 {
-    public class IProductRepository:DbContext,IProductRepsoitory
+    public class ProductRepository:DbContext,IProductRepsoitory
     {
         private readonly TodoContext _context;
-        public  IProductRepository(TodoContext context)
+        public  ProductRepository(TodoContext context)
         {
             _context = context;
         }

@@ -25,6 +25,7 @@ namespace TodoApi.Controllers
         {
             _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
         }
+       // [ProducesResponseType(404)]
         [HttpGet]
         public async Task<IActionResult> GetAllOrders()
         {

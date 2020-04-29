@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace TodoApi.Todo.Data.Repsoitories
 {
-    interface IProductRepsoitory
+    public interface IProductRepsoitory
     {
-        Task<TodoItem> GetItemById(long id);
-        Task<List<TodoItem>> GetAllitem();
-        Task<TodoItem> AddProudct(TodoItem todoItem);
-        Task<TodoItem> DeleteItem(long id);
+       public  Task<TodoItem> GetItemById(long id);
+       public  Task<List<TodoItem>> GetAllitem();
+       public  Task<TodoItem> AddProudct(TodoItem todoItem);
+       public  Task<TodoItem> DeleteItem(long id);
     }
 }
