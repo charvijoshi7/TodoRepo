@@ -45,10 +45,6 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
-            "Catel.MVVM": {
-              "target": "Package",
-              "version": "[5.12.5, )"
-            },
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -122,9 +118,6 @@
             },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App": {
-              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"

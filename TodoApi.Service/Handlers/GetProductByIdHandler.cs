@@ -11,10 +11,8 @@ namespace TodoApi.Handlers
 {
     public class GetProductByIdHandler : IRequestHandler<GetOrderByIdQuery, TodoItem>
     {
-        private readonly ProductRepository _prdouctRepository;
-        // private readonly IMapper _mapper;
-
-        public GetProductByIdHandler(ProductRepository productRepository)
+        private readonly IProductRepository _prdouctRepository;
+        public GetProductByIdHandler(IProductRepository productRepository)
         {
             _prdouctRepository = productRepository;
 

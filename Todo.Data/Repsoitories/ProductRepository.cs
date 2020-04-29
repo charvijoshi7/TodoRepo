@@ -8,13 +8,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using TodoApi.Models;
+using TodoApi.Todo.Data.Repsoitories;
 
 namespace TodoApi.Repository
 {
-    public class ProductRepository:DbContext
+    public class IProductRepository:DbContext,IProductRepsoitory
     {
         private readonly TodoContext _context;
-        public  ProductRepository(TodoContext context)
+        public  IProductRepository(TodoContext context)
         {
             _context = context;
         }

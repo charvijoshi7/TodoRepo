@@ -15,6 +15,7 @@ using TodoApi.Models;
 using TodoApi.Repository;
 using MediatR;
 using AutoMapper;
+using TodoApi.Todo.Data.Repsoitories;
 
 namespace TodoApi
 {
@@ -31,10 +32,10 @@ namespace TodoApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<TodoContext>();
-            services.AddDbContext<ProductRepository>();
+            services.AddDbContext<IProductRepository>();
             services.AddControllers();
             services.AddMediatR(typeof(Startup));
-            //services.AddTransient(typeof(IPipelineBehavior<,>));
+            services.AddScoped<IProductRepsoitory,IProductRepository>();
             // services.AddScope<ProductRepository>();
         }
        

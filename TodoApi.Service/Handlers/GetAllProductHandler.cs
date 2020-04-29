@@ -16,15 +16,12 @@ namespace TodoApi.Handlers
     public class GetAllProductHandler : IRequestHandler<GetAllProudctDetail, List<TodoItem>>
     {
 
-    private readonly ProductRepository _prdouctRepository;
-       // private readonly IMapper _mapper;
-
-        public GetAllProductHandler(ProductRepository productRepository)
+    private readonly IProductRepository _prdouctRepository;
+      public GetAllProductHandler(IProductRepository productRepository)
         {
             _prdouctRepository = productRepository;
            
         }
-
         public async Task<List<TodoItem>> Handle(GetAllProudctDetail request, CancellationToken cancellationToken)
         {
             List<TodoItem> todoitem = await _prdouctRepository.GetAllitem();

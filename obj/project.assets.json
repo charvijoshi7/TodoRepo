@@ -41,65 +41,6 @@
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
         }
       },
-      "Catel.Core/5.12.5": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections.Immutable": "1.6.0",
-          "System.ComponentModel.Annotations": "4.6.0",
-          "System.Configuration.ConfigurationManager": "4.6.0",
-          "System.Runtime.Serialization.Formatters": "4.3.0",
-          "System.Runtime.Serialization.Xml": "4.3.0"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Catel.Core.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Catel.Core.dll": {}
-        }
-      },
-      "Catel.MVVM/5.12.5": {
-        "type": "package",
-        "dependencies": {
-          "Catel.Core": "5.12.5",
-          "Expression.Blend.Sdk.WPF": "1.0.1",
-          "System.ComponentModel.Annotations": "4.6.0"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Catel.MVVM.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Catel.MVVM.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App"
-        ],
-        "resource": {
-          "lib/netcoreapp3.1/de/Catel.MVVM.resources.dll": {
-            "locale": "de"
-          },
-          "lib/netcoreapp3.1/es/Catel.MVVM.resources.dll": {
-            "locale": "es"
-          },
-          "lib/netcoreapp3.1/fr/Catel.MVVM.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/netcoreapp3.1/it/Catel.MVVM.resources.dll": {
-            "locale": "it"
-          },
-          "lib/netcoreapp3.1/nl/Catel.MVVM.resources.dll": {
-            "locale": "nl"
-          },
-          "lib/netcoreapp3.1/ru/Catel.MVVM.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/netcoreapp3.1/tr/Catel.MVVM.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/netcoreapp3.1/zh-Hans/Catel.MVVM.resources.dll": {
-            "locale": "zh-Hans"
-          }
-        }
-      },
       "dotNetRDF/2.5.1": {
         "type": "package",
         "dependencies": {
@@ -143,172 +84,6 @@
         "build": {
           "buildTransitive/netcoreapp3.0/EntityFramework.props": {},
           "buildTransitive/netcoreapp3.0/EntityFramework.targets": {}
-        }
-      },
-      "Expression.Blend.Sdk.WPF/1.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Microsoft.Expression.Interactions.dll": {},
-          "lib/net45/System.Windows.Interactivity.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.Expression.Interactions.dll": {},
-          "lib/net45/System.Windows.Interactivity.dll": {}
-        },
-        "resource": {
-          "lib/net45/en/Microsoft.Expression.Interactions.resources.dll": {
-            "locale": "en"
-          },
-          "lib/net45/en/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
-            "locale": "en"
-          },
-          "lib/net45/en/System.Windows.Interactivity.resources.dll": {
-            "locale": "en"
-          },
-          "lib/net45/es/Microsoft.Expression.Controls.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net45/es/Microsoft.Expression.Drawing.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net45/es/Microsoft.Expression.Effects.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net45/es/Microsoft.Expression.Interactions.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net45/es/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net45/es/System.Windows.Interactivity.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net45/fr/Microsoft.Expression.Controls.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net45/fr/Microsoft.Expression.Drawing.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net45/fr/Microsoft.Expression.Effects.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net45/fr/Microsoft.Expression.Interactions.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net45/fr/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net45/fr/System.Windows.Interactivity.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net45/it/Microsoft.Expression.Controls.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net45/it/Microsoft.Expression.Drawing.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net45/it/Microsoft.Expression.Effects.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net45/it/Microsoft.Expression.Interactions.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net45/it/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net45/it/System.Windows.Interactivity.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net45/ja/Microsoft.Expression.Controls.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net45/ja/Microsoft.Expression.Drawing.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net45/ja/Microsoft.Expression.Effects.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net45/ja/Microsoft.Expression.Interactions.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net45/ja/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net45/ja/System.Windows.Interactivity.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net45/ko/Microsoft.Expression.Controls.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net45/ko/Microsoft.Expression.Drawing.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net45/ko/Microsoft.Expression.Effects.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net45/ko/Microsoft.Expression.Interactions.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net45/ko/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net45/ko/System.Windows.Interactivity.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net45/ru/Microsoft.Expression.Controls.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net45/ru/Microsoft.Expression.Drawing.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net45/ru/Microsoft.Expression.Effects.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net45/ru/Microsoft.Expression.Interactions.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net45/ru/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net45/ru/System.Windows.Interactivity.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net45/zh-Hans/Microsoft.Expression.Controls.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net45/zh-Hans/Microsoft.Expression.Drawing.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net45/zh-Hans/Microsoft.Expression.Effects.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net45/zh-Hans/Microsoft.Expression.Interactions.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net45/zh-Hans/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net45/zh-Hans/System.Windows.Interactivity.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net45/zh-Hant/Microsoft.Expression.Controls.resources.dll": {
-            "locale": "zh-Hant"
-          },
-          "lib/net45/zh-Hant/Microsoft.Expression.Drawing.resources.dll": {
-            "locale": "zh-Hant"
-          },
-          "lib/net45/zh-Hant/Microsoft.Expression.Effects.resources.dll": {
-            "locale": "zh-Hant"
-          },
-          "lib/net45/zh-Hant/Microsoft.Expression.Interactions.resources.dll": {
-            "locale": "zh-Hant"
-          },
-          "lib/net45/zh-Hant/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
-            "locale": "zh-Hant"
-          },
-          "lib/net45/zh-Hant/System.Windows.Interactivity.resources.dll": {
-            "locale": "zh-Hant"
-          }
         }
       },
       "Google.Protobuf/3.6.1": {
@@ -2552,7 +2327,7 @@
           "System.Runtime.Serialization.Primitives": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Runtime.Serialization.Formatters.dll": {}
+          "ref/netstandard1.3/_._": {}
         },
         "runtime": {
           "lib/netstandard1.4/System.Runtime.Serialization.Formatters.dll": {}
@@ -2579,27 +2354,10 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {}
+          "ref/netstandard1.3/_._": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {}
-        }
-      },
-      "System.Runtime.Serialization.Xml/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.IO": "4.3.0",
-          "System.Private.DataContractSerialization": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Serialization.Primitives": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Xml.ReaderWriter": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Runtime.Serialization.Xml.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Runtime.Serialization.Xml.dll": {}
         }
       },
       "System.Security.AccessControl/4.7.0": {
@@ -3273,103 +3031,6 @@
         "lib/xamarinios/BouncyCastle.Crypto.xml"
       ]
     },
-    "Catel.Core/5.12.5": {
-      "sha512": "HiZfJpk75JXsfENgwxxwUU0pTVA7pQNhoACc31EzREDr7IlsGTdO5Zm5KKfgoEupRR44oyhD8ndpXGQm+VFgrQ==",
-      "type": "package",
-      "path": "catel.core/5.12.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "catel.core.5.12.5.nupkg.sha512",
-        "catel.core.nuspec",
-        "icon.png",
-        "lib/net45/Catel.Core.dll",
-        "lib/net45/Catel.Core.pdb",
-        "lib/net45/Catel.Core.xml",
-        "lib/net46/Catel.Core.dll",
-        "lib/net46/Catel.Core.pdb",
-        "lib/net46/Catel.Core.xml",
-        "lib/net47/Catel.Core.dll",
-        "lib/net47/Catel.Core.pdb",
-        "lib/net47/Catel.Core.xml",
-        "lib/netcoreapp3.0/Catel.Core.dll",
-        "lib/netcoreapp3.0/Catel.Core.pdb",
-        "lib/netcoreapp3.0/Catel.Core.xml",
-        "lib/netcoreapp3.1/Catel.Core.dll",
-        "lib/netcoreapp3.1/Catel.Core.pdb",
-        "lib/netcoreapp3.1/Catel.Core.xml",
-        "lib/netstandard2.0/Catel.Core.dll",
-        "lib/netstandard2.0/Catel.Core.pdb",
-        "lib/netstandard2.0/Catel.Core.xml"
-      ]
-    },
-    "Catel.MVVM/5.12.5": {
-      "sha512": "E8XXidJAxuGTtoA7PLTiyYvEDwJLv9nE41a1mqv/+D/WPCjcXnQTspr1wDNgbeNqlsUvIH3zftE/eJGKjXha0A==",
-      "type": "package",
-      "path": "catel.mvvm/5.12.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "catel.mvvm.5.12.5.nupkg.sha512",
-        "catel.mvvm.nuspec",
-        "icon.png",
-        "lib/net45/Catel.MVVM.dll",
-        "lib/net45/Catel.MVVM.pdb",
-        "lib/net45/Catel.MVVM.xml",
-        "lib/net45/de/Catel.MVVM.resources.dll",
-        "lib/net45/es/Catel.MVVM.resources.dll",
-        "lib/net45/fr/Catel.MVVM.resources.dll",
-        "lib/net45/it/Catel.MVVM.resources.dll",
-        "lib/net45/nl/Catel.MVVM.resources.dll",
-        "lib/net45/ru/Catel.MVVM.resources.dll",
-        "lib/net45/tr/Catel.MVVM.resources.dll",
-        "lib/net45/zh-Hans/Catel.MVVM.resources.dll",
-        "lib/net46/Catel.MVVM.dll",
-        "lib/net46/Catel.MVVM.pdb",
-        "lib/net46/Catel.MVVM.xml",
-        "lib/net46/de/Catel.MVVM.resources.dll",
-        "lib/net46/es/Catel.MVVM.resources.dll",
-        "lib/net46/fr/Catel.MVVM.resources.dll",
-        "lib/net46/it/Catel.MVVM.resources.dll",
-        "lib/net46/nl/Catel.MVVM.resources.dll",
-        "lib/net46/ru/Catel.MVVM.resources.dll",
-        "lib/net46/tr/Catel.MVVM.resources.dll",
-        "lib/net46/zh-Hans/Catel.MVVM.resources.dll",
-        "lib/net47/Catel.MVVM.dll",
-        "lib/net47/Catel.MVVM.pdb",
-        "lib/net47/Catel.MVVM.xml",
-        "lib/net47/de/Catel.MVVM.resources.dll",
-        "lib/net47/es/Catel.MVVM.resources.dll",
-        "lib/net47/fr/Catel.MVVM.resources.dll",
-        "lib/net47/it/Catel.MVVM.resources.dll",
-        "lib/net47/nl/Catel.MVVM.resources.dll",
-        "lib/net47/ru/Catel.MVVM.resources.dll",
-        "lib/net47/tr/Catel.MVVM.resources.dll",
-        "lib/net47/zh-Hans/Catel.MVVM.resources.dll",
-        "lib/netcoreapp3.0/Catel.MVVM.dll",
-        "lib/netcoreapp3.0/Catel.MVVM.pdb",
-        "lib/netcoreapp3.0/Catel.MVVM.xml",
-        "lib/netcoreapp3.0/de/Catel.MVVM.resources.dll",
-        "lib/netcoreapp3.0/es/Catel.MVVM.resources.dll",
-        "lib/netcoreapp3.0/fr/Catel.MVVM.resources.dll",
-        "lib/netcoreapp3.0/it/Catel.MVVM.resources.dll",
-        "lib/netcoreapp3.0/nl/Catel.MVVM.resources.dll",
-        "lib/netcoreapp3.0/ru/Catel.MVVM.resources.dll",
-        "lib/netcoreapp3.0/tr/Catel.MVVM.resources.dll",
-        "lib/netcoreapp3.0/zh-Hans/Catel.MVVM.resources.dll",
-        "lib/netcoreapp3.1/Catel.MVVM.dll",
-        "lib/netcoreapp3.1/Catel.MVVM.pdb",
-        "lib/netcoreapp3.1/Catel.MVVM.xml",
-        "lib/netcoreapp3.1/de/Catel.MVVM.resources.dll",
-        "lib/netcoreapp3.1/es/Catel.MVVM.resources.dll",
-        "lib/netcoreapp3.1/fr/Catel.MVVM.resources.dll",
-        "lib/netcoreapp3.1/it/Catel.MVVM.resources.dll",
-        "lib/netcoreapp3.1/nl/Catel.MVVM.resources.dll",
-        "lib/netcoreapp3.1/ru/Catel.MVVM.resources.dll",
-        "lib/netcoreapp3.1/tr/Catel.MVVM.resources.dll",
-        "lib/netcoreapp3.1/zh-Hans/Catel.MVVM.resources.dll"
-      ]
-    },
     "dotNetRDF/2.5.1": {
       "sha512": "BN43/2lNn+wA1StT86DdHqfKmZxbyJgeGSQ+D7AKbsArbAEuxIUfssTZFdjTqM3bgHIGX/ntT1wkryItV+1+MA==",
       "type": "package",
@@ -3442,269 +3103,6 @@
         "tools/netcoreapp3.0/any/ef6.dll",
         "tools/netcoreapp3.0/any/ef6.pdb",
         "tools/netcoreapp3.0/any/ef6.runtimeconfig.json"
-      ]
-    },
-    "Expression.Blend.Sdk.WPF/1.0.1": {
-      "sha512": "eXvBXgPhxHSdlzwK1rItPdrvj8sBzOUvibbAHbR9obo5o5eMTue9/OCOrjguUsaDtR3uzE1IM/HmQqDC686mcA==",
-      "type": "package",
-      "path": "expression.blend.sdk.wpf/1.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "expression.blend.sdk.wpf.1.0.1.nupkg.sha512",
-        "expression.blend.sdk.wpf.nuspec",
-        "lib/net40/Design/Microsoft.Expression.Controls.Design.dll",
-        "lib/net40/Design/Microsoft.Expression.Drawing.Design.dll",
-        "lib/net40/Design/Microsoft.Expression.Effects.Design.dll",
-        "lib/net40/Design/Microsoft.Expression.Prototyping.SketchControls.design.v4.dll",
-        "lib/net40/Design/de/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net40/Design/de/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net40/Design/de/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net40/Design/en/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net40/Design/en/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net40/Design/en/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net40/Design/es/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net40/Design/es/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net40/Design/es/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net40/Design/fr/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net40/Design/fr/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net40/Design/fr/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net40/Design/it/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net40/Design/it/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net40/Design/it/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net40/Design/ja/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net40/Design/ja/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net40/Design/ja/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net40/Design/ko/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net40/Design/ko/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net40/Design/ko/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net40/Design/zh-Hans/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net40/Design/zh-Hans/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net40/Design/zh-Hans/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net40/Design/zh-Hant/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net40/Design/zh-Hant/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net40/Design/zh-Hant/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net40/Microsoft.Expression.Controls.dll",
-        "lib/net40/Microsoft.Expression.Controls.xml",
-        "lib/net40/Microsoft.Expression.Drawing.dll",
-        "lib/net40/Microsoft.Expression.Drawing.xml",
-        "lib/net40/Microsoft.Expression.Effects.dll",
-        "lib/net40/Microsoft.Expression.Effects.xml",
-        "lib/net40/Microsoft.Expression.Interactions.dll",
-        "lib/net40/Microsoft.Expression.Interactions.xml",
-        "lib/net40/Microsoft.Expression.Prototyping.Interactivity.dll",
-        "lib/net40/Microsoft.Expression.Prototyping.SketchControls.dll",
-        "lib/net40/System.Windows.Interactivity.dll",
-        "lib/net40/System.Windows.Interactivity.xml",
-        "lib/net40/de/Microsoft.Expression.Controls.xml",
-        "lib/net40/de/Microsoft.Expression.Drawing.xml",
-        "lib/net40/de/Microsoft.Expression.Effects.xml",
-        "lib/net40/de/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net40/de/Microsoft.Expression.Interactions.xml",
-        "lib/net40/de/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net40/de/System.Windows.Interactivity.resources.dll",
-        "lib/net40/de/System.Windows.Interactivity.xml",
-        "lib/net40/en/Microsoft.Expression.Controls.xml",
-        "lib/net40/en/Microsoft.Expression.Drawing.xml",
-        "lib/net40/en/Microsoft.Expression.Effects.xml",
-        "lib/net40/en/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net40/en/Microsoft.Expression.Interactions.xml",
-        "lib/net40/en/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net40/en/System.Windows.Interactivity.resources.dll",
-        "lib/net40/en/System.Windows.Interactivity.xml",
-        "lib/net40/es/Microsoft.Expression.Controls.xml",
-        "lib/net40/es/Microsoft.Expression.Drawing.xml",
-        "lib/net40/es/Microsoft.Expression.Effects.xml",
-        "lib/net40/es/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net40/es/Microsoft.Expression.Interactions.xml",
-        "lib/net40/es/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net40/es/System.Windows.Interactivity.resources.dll",
-        "lib/net40/es/System.Windows.Interactivity.xml",
-        "lib/net40/fr/Microsoft.Expression.Controls.xml",
-        "lib/net40/fr/Microsoft.Expression.Drawing.xml",
-        "lib/net40/fr/Microsoft.Expression.Effects.xml",
-        "lib/net40/fr/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net40/fr/Microsoft.Expression.Interactions.xml",
-        "lib/net40/fr/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net40/fr/System.Windows.Interactivity.resources.dll",
-        "lib/net40/fr/System.Windows.Interactivity.xml",
-        "lib/net40/it/Microsoft.Expression.Controls.xml",
-        "lib/net40/it/Microsoft.Expression.Drawing.xml",
-        "lib/net40/it/Microsoft.Expression.Effects.xml",
-        "lib/net40/it/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net40/it/Microsoft.Expression.Interactions.xml",
-        "lib/net40/it/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net40/it/System.Windows.Interactivity.resources.dll",
-        "lib/net40/it/System.Windows.Interactivity.xml",
-        "lib/net40/ja/Microsoft.Expression.Controls.xml",
-        "lib/net40/ja/Microsoft.Expression.Drawing.xml",
-        "lib/net40/ja/Microsoft.Expression.Effects.xml",
-        "lib/net40/ja/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net40/ja/Microsoft.Expression.Interactions.xml",
-        "lib/net40/ja/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net40/ja/System.Windows.Interactivity.resources.dll",
-        "lib/net40/ja/System.Windows.Interactivity.xml",
-        "lib/net40/ko/Microsoft.Expression.Controls.xml",
-        "lib/net40/ko/Microsoft.Expression.Drawing.xml",
-        "lib/net40/ko/Microsoft.Expression.Effects.xml",
-        "lib/net40/ko/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net40/ko/Microsoft.Expression.Interactions.xml",
-        "lib/net40/ko/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net40/ko/System.Windows.Interactivity.resources.dll",
-        "lib/net40/ko/System.Windows.Interactivity.xml",
-        "lib/net40/zh-Hans/Microsoft.Expression.Controls.xml",
-        "lib/net40/zh-Hans/Microsoft.Expression.Drawing.xml",
-        "lib/net40/zh-Hans/Microsoft.Expression.Effects.xml",
-        "lib/net40/zh-Hans/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net40/zh-Hans/Microsoft.Expression.Interactions.xml",
-        "lib/net40/zh-Hans/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net40/zh-Hans/System.Windows.Interactivity.resources.dll",
-        "lib/net40/zh-Hans/System.Windows.Interactivity.xml",
-        "lib/net40/zh-Hant/Microsoft.Expression.Controls.xml",
-        "lib/net40/zh-Hant/Microsoft.Expression.Drawing.xml",
-        "lib/net40/zh-Hant/Microsoft.Expression.Effects.xml",
-        "lib/net40/zh-Hant/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net40/zh-Hant/Microsoft.Expression.Interactions.xml",
-        "lib/net40/zh-Hant/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net40/zh-Hant/System.Windows.Interactivity.resources.dll",
-        "lib/net40/zh-Hant/System.Windows.Interactivity.xml",
-        "lib/net45/Design/Microsoft.Expression.Controls.Design.dll",
-        "lib/net45/Design/Microsoft.Expression.Drawing.Design.dll",
-        "lib/net45/Design/Microsoft.Expression.Effects.Design.dll",
-        "lib/net45/Design/Microsoft.Expression.Prototyping.SketchControls.design.v4.dll",
-        "lib/net45/Design/de/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net45/Design/de/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net45/Design/de/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net45/Design/en/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net45/Design/en/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net45/Design/en/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net45/Design/es/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net45/Design/es/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net45/Design/es/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net45/Design/fr/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net45/Design/fr/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net45/Design/fr/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net45/Design/it/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net45/Design/it/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net45/Design/it/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net45/Design/ja/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net45/Design/ja/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net45/Design/ja/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net45/Design/ko/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net45/Design/ko/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net45/Design/ko/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net45/Design/ru/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net45/Design/ru/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net45/Design/ru/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net45/Design/zh-Hans/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net45/Design/zh-Hans/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net45/Design/zh-Hans/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net45/Design/zh-Hant/Microsoft.Expression.Controls.Design.resources.dll",
-        "lib/net45/Design/zh-Hant/Microsoft.Expression.Drawing.Design.resources.dll",
-        "lib/net45/Design/zh-Hant/Microsoft.Expression.Effects.Design.resources.dll",
-        "lib/net45/Microsoft.Expression.Controls.dll",
-        "lib/net45/Microsoft.Expression.Drawing.dll",
-        "lib/net45/Microsoft.Expression.Effects.dll",
-        "lib/net45/Microsoft.Expression.Interactions.dll",
-        "lib/net45/Microsoft.Expression.Prototyping.Interactivity.dll",
-        "lib/net45/Microsoft.Expression.Prototyping.SketchControls.dll",
-        "lib/net45/System.Windows.Interactivity.dll",
-        "lib/net45/en/Microsoft.Expression.Controls.xml",
-        "lib/net45/en/Microsoft.Expression.Drawing.xml",
-        "lib/net45/en/Microsoft.Expression.Effects.xml",
-        "lib/net45/en/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net45/en/Microsoft.Expression.Interactions.xml",
-        "lib/net45/en/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net45/en/System.Windows.Interactivity.resources.dll",
-        "lib/net45/en/System.Windows.Interactivity.xml",
-        "lib/net45/es/Microsoft.Expression.Controls.resources.dll",
-        "lib/net45/es/Microsoft.Expression.Controls.xml",
-        "lib/net45/es/Microsoft.Expression.Drawing.resources.dll",
-        "lib/net45/es/Microsoft.Expression.Drawing.xml",
-        "lib/net45/es/Microsoft.Expression.Effects.resources.dll",
-        "lib/net45/es/Microsoft.Expression.Effects.xml",
-        "lib/net45/es/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net45/es/Microsoft.Expression.Interactions.xml",
-        "lib/net45/es/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net45/es/System.Windows.Interactivity.resources.dll",
-        "lib/net45/es/System.Windows.Interactivity.xml",
-        "lib/net45/fr/Microsoft.Expression.Controls.resources.dll",
-        "lib/net45/fr/Microsoft.Expression.Controls.xml",
-        "lib/net45/fr/Microsoft.Expression.Drawing.resources.dll",
-        "lib/net45/fr/Microsoft.Expression.Drawing.xml",
-        "lib/net45/fr/Microsoft.Expression.Effects.resources.dll",
-        "lib/net45/fr/Microsoft.Expression.Effects.xml",
-        "lib/net45/fr/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net45/fr/Microsoft.Expression.Interactions.xml",
-        "lib/net45/fr/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net45/fr/System.Windows.Interactivity.resources.dll",
-        "lib/net45/fr/System.Windows.Interactivity.xml",
-        "lib/net45/it/Microsoft.Expression.Controls.resources.dll",
-        "lib/net45/it/Microsoft.Expression.Controls.xml",
-        "lib/net45/it/Microsoft.Expression.Drawing.resources.dll",
-        "lib/net45/it/Microsoft.Expression.Drawing.xml",
-        "lib/net45/it/Microsoft.Expression.Effects.resources.dll",
-        "lib/net45/it/Microsoft.Expression.Effects.xml",
-        "lib/net45/it/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net45/it/Microsoft.Expression.Interactions.xml",
-        "lib/net45/it/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net45/it/System.Windows.Interactivity.resources.dll",
-        "lib/net45/it/System.Windows.Interactivity.xml",
-        "lib/net45/ja/Microsoft.Expression.Controls.resources.dll",
-        "lib/net45/ja/Microsoft.Expression.Controls.xml",
-        "lib/net45/ja/Microsoft.Expression.Drawing.resources.dll",
-        "lib/net45/ja/Microsoft.Expression.Drawing.xml",
-        "lib/net45/ja/Microsoft.Expression.Effects.resources.dll",
-        "lib/net45/ja/Microsoft.Expression.Effects.xml",
-        "lib/net45/ja/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net45/ja/Microsoft.Expression.Interactions.xml",
-        "lib/net45/ja/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net45/ja/System.Windows.Interactivity.resources.dll",
-        "lib/net45/ja/System.Windows.Interactivity.xml",
-        "lib/net45/ko/Microsoft.Expression.Controls.resources.dll",
-        "lib/net45/ko/Microsoft.Expression.Controls.xml",
-        "lib/net45/ko/Microsoft.Expression.Drawing.resources.dll",
-        "lib/net45/ko/Microsoft.Expression.Drawing.xml",
-        "lib/net45/ko/Microsoft.Expression.Effects.resources.dll",
-        "lib/net45/ko/Microsoft.Expression.Effects.xml",
-        "lib/net45/ko/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net45/ko/Microsoft.Expression.Interactions.xml",
-        "lib/net45/ko/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net45/ko/System.Windows.Interactivity.resources.dll",
-        "lib/net45/ko/System.Windows.Interactivity.xml",
-        "lib/net45/ru/Microsoft.Expression.Controls.resources.dll",
-        "lib/net45/ru/Microsoft.Expression.Controls.xml",
-        "lib/net45/ru/Microsoft.Expression.Drawing.resources.dll",
-        "lib/net45/ru/Microsoft.Expression.Drawing.xml",
-        "lib/net45/ru/Microsoft.Expression.Effects.resources.dll",
-        "lib/net45/ru/Microsoft.Expression.Effects.xml",
-        "lib/net45/ru/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net45/ru/Microsoft.Expression.Interactions.xml",
-        "lib/net45/ru/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net45/ru/System.Windows.Interactivity.resources.dll",
-        "lib/net45/ru/System.Windows.Interactivity.xml",
-        "lib/net45/zh-Hans/Microsoft.Expression.Controls.resources.dll",
-        "lib/net45/zh-Hans/Microsoft.Expression.Controls.xml",
-        "lib/net45/zh-Hans/Microsoft.Expression.Drawing.resources.dll",
-        "lib/net45/zh-Hans/Microsoft.Expression.Drawing.xml",
-        "lib/net45/zh-Hans/Microsoft.Expression.Effects.resources.dll",
-        "lib/net45/zh-Hans/Microsoft.Expression.Effects.xml",
-        "lib/net45/zh-Hans/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net45/zh-Hans/Microsoft.Expression.Interactions.xml",
-        "lib/net45/zh-Hans/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net45/zh-Hans/System.Windows.Interactivity.resources.dll",
-        "lib/net45/zh-Hans/System.Windows.Interactivity.xml",
-        "lib/net45/zh-Hant/Microsoft.Expression.Controls.resources.dll",
-        "lib/net45/zh-Hant/Microsoft.Expression.Controls.xml",
-        "lib/net45/zh-Hant/Microsoft.Expression.Drawing.resources.dll",
-        "lib/net45/zh-Hant/Microsoft.Expression.Drawing.xml",
-        "lib/net45/zh-Hant/Microsoft.Expression.Effects.resources.dll",
-        "lib/net45/zh-Hant/Microsoft.Expression.Effects.xml",
-        "lib/net45/zh-Hant/Microsoft.Expression.Interactions.resources.dll",
-        "lib/net45/zh-Hant/Microsoft.Expression.Interactions.xml",
-        "lib/net45/zh-Hant/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
-        "lib/net45/zh-Hant/System.Windows.Interactivity.resources.dll",
-        "lib/net45/zh-Hant/System.Windows.Interactivity.xml"
       ]
     },
     "Google.Protobuf/3.6.1": {
@@ -8764,77 +8162,6 @@
         "system.runtime.serialization.primitives.nuspec"
       ]
     },
-    "System.Runtime.Serialization.Xml/4.3.0": {
-      "sha512": "nUQx/5OVgrqEba3+j7OdiofvVq9koWZAC7Z3xGI8IIViZqApWnZ5+lLcwYgTlbkobrl/Rat+Jb8GeD4WQESD2A==",
-      "type": "package",
-      "path": "system.runtime.serialization.xml/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/net46/System.Runtime.Serialization.Xml.dll",
-        "lib/netcore50/System.Runtime.Serialization.Xml.dll",
-        "lib/netstandard1.3/System.Runtime.Serialization.Xml.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/net46/System.Runtime.Serialization.Xml.dll",
-        "ref/netcore50/System.Runtime.Serialization.Xml.dll",
-        "ref/netcore50/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/de/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/es/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/fr/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/it/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/ja/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/ko/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/ru/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/zh-hans/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/zh-hant/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.0/System.Runtime.Serialization.Xml.dll",
-        "ref/netstandard1.0/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.0/de/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.0/es/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.0/fr/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.0/it/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.0/ja/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.0/ko/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.0/ru/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.0/zh-hans/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.0/zh-hant/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.3/System.Runtime.Serialization.Xml.dll",
-        "ref/netstandard1.3/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.3/de/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.3/es/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.3/fr/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.3/it/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.3/ja/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.3/ko/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.3/ru/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.3/zh-hans/System.Runtime.Serialization.Xml.xml",
-        "ref/netstandard1.3/zh-hant/System.Runtime.Serialization.Xml.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.runtime.serialization.xml.4.3.0.nupkg.sha512",
-        "system.runtime.serialization.xml.nuspec"
-      ]
-    },
     "System.Security.AccessControl/4.7.0": {
       "sha512": "JECvTt5aFF3WT3gHpfofL2MNNP6v84sxtXxpqhLBCcDRzqsPBmHhQ6shv4DwwN2tRlzsUxtb3G9M3763rbXKDg==",
       "type": "package",
@@ -10300,7 +9627,6 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AutoMapper >= 9.0.0",
-      "Catel.MVVM >= 5.12.5",
       "EntityFramework >= 6.4.0",
       "MediatR >= 8.0.1",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 8.0.0",
@@ -10360,10 +9686,6 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[9.0.0, )"
-          },
-          "Catel.MVVM": {
-            "target": "Package",
-            "version": "[5.12.5, )"
           },
           "EntityFramework": {
             "target": "Package",
@@ -10438,25 +9760,10 @@
           },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
-          },
-          "Microsoft.WindowsDesktop.App": {
-            "privateAssets": "none"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Expression.Blend.Sdk.WPF 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Expression.Blend.Sdk.WPF",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

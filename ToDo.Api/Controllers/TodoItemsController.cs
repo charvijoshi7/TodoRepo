@@ -10,6 +10,7 @@ using TodoApi.Coomands;
 using TodoApi.Models;
 using TodoApi.Query;
 using TodoApi.Repository;
+using TodoApi.Todo.Data.Repsoitories;
 
 namespace TodoApi.Controllers
 {
@@ -17,14 +18,11 @@ namespace TodoApi.Controllers
     [ApiController]
     public class TodoItemsController : ControllerBase
     {
-        private readonly TodoContext _context;
-        private readonly ProductRepository _productRepository;
+    
         private readonly IMediator _mediator;
 
-        public TodoItemsController(TodoContext context, IMediator mediator, ProductRepository productRepository)
+        public TodoItemsController(IMediator mediator)
         {
-            _context = context;
-            _productRepository = productRepository;
             _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
         }
         [HttpGet]
@@ -54,8 +52,9 @@ namespace TodoApi.Controllers
         public async Task<ActionResult<TodoItem>> DeleteTodoItem(long id)
         {
             DeleteProductCommand command = new DeleteProductCommand(id);
-            var result = await _mediator.Send(command);
-            return await _productRepository.DeleteItem(id);
+            var result= await _mediator.Send(command);
+            return result;
+            
         }
 
     }

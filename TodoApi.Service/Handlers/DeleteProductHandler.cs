@@ -12,9 +12,9 @@ namespace TodoApi.Handlers
     public class DeleteProductHandler : IRequestHandler<DeleteProductCommand, TodoItem>
 
     {
-        private readonly ProductRepository _prdouctRepository;
+        private readonly IProductRepository _prdouctRepository;
         // private readonly IMapper _mapper;
-        public DeleteProductHandler(ProductRepository productRepository)
+        public DeleteProductHandler(IProductRepository productRepository)
         {
             _prdouctRepository = productRepository;
 

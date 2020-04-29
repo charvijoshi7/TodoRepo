@@ -11,9 +11,9 @@ namespace TodoApi.Handlers
 {
     public class CreateProductHandler: IRequestHandler<CreateProudctCommand ,TodoItem>
     {
-        private readonly ProductRepository _productRepository;
+        private readonly IProductRepository _productRepository;
        
-        public CreateProductHandler(ProductRepository productRepository)
+        public CreateProductHandler(IProductRepository productRepository)
         {
             _productRepository = productRepository;
 
