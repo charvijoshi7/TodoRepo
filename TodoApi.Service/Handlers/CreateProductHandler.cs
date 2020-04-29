@@ -6,14 +6,15 @@ using System.Threading;
 using System.Threading.Tasks;
 using TodoApi.Coomands;
 using TodoApi.Repository;
+using TodoApi.Todo.Data.Repsoitories;
 
 namespace TodoApi.Handlers
 {
     public class CreateProductHandler: IRequestHandler<CreateProudctCommand ,TodoItem>
     {
-        private readonly IProductRepository _productRepository;
+        private readonly IProductRepsoitory _productRepository;
        
-        public CreateProductHandler(IProductRepository productRepository)
+        public CreateProductHandler(IProductRepsoitory productRepository)
         {
             _productRepository = productRepository;
 

@@ -6,15 +6,16 @@ using System.Threading;
 using System.Threading.Tasks;
 using TodoApi.Coomands;
 using TodoApi.Repository;
+using TodoApi.Todo.Data.Repsoitories;
 
 namespace TodoApi.Handlers
 {
     public class DeleteProductHandler : IRequestHandler<DeleteProductCommand, TodoItem>
 
     {
-        private readonly IProductRepository _prdouctRepository;
+        private readonly IProductRepsoitory _prdouctRepository;
         // private readonly IMapper _mapper;
-        public DeleteProductHandler(IProductRepository productRepository)
+        public DeleteProductHandler(IProductRepsoitory productRepository)
         {
             _prdouctRepository = productRepository;
 
