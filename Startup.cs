@@ -12,6 +12,11 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using TodoApi.Models;
+using TodoApi.Repository;
+using MediatR;
+using AutoMapper;
+using TodoApi.Todo.Data.Repsoitories;
+using TodoApi.ToDo.Api.Controllers;
 
 namespace TodoApi
 {
@@ -27,10 +32,36 @@ namespace TodoApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<TodoContext>(opt =>
-               opt.UseInMemoryDatabase("TodoList"));
+            services.AddDbContext<TodoContext>();
+            
+            services.AddScoped<IProductRepsoitory, ProductRepository>();
             services.AddControllers();
+            services.AddMediatR(typeof(Startup));
+            
+
+           /* services.AddMvc()
+                    .ConfigureApiBehaviorOptions(options =>
+                    {
+                        options.InvalidModelStateResponseFactory = context =>
+                        {
+                            var problems = new CustomBadRequest(context);
+                            return new BadRequestObjectResult(problems);
+                        };
+                    });
+            services.Configure<ApiBehaviorOptions>(a =>
+            {
+                a.InvalidModelStateResponseFactory = context =>
+                {
+                    var problemDetails = new CustomBadRequest(context);
+                    return new BadRequestObjectResult(problemDetails)
+                    {
+                        ContentTypes = { "application / problem + json”, “application / problem + xml"}
+                    };
+                };
+            });*/
+            
         }
+       
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -45,6 +76,7 @@ namespace TodoApi
             app.UseRouting();
 
             app.UseAuthorization();
+
 
             app.UseEndpoints(endpoints =>
             {
