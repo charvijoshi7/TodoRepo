@@ -1,3 +1,7 @@
+E:\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.csproj.CoreCompileInputs.cache
+E:\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.MvcApplicationPartsAssemblyInfo.cache
+E:\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.AssemblyInfoInputs.cache
+E:\TodoRepo\bin\Debug\netcoreapp3.1\appsettings.Development.json
 E:\TodoRepo\bin\Debug\netcoreapp3.1\appsettings.json
 E:\TodoRepo\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 E:\TodoRepo\bin\Debug\netcoreapp3.1\TodoApi.exe
@@ -132,9 +136,6 @@ E:\TodoRepo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.S
 E:\TodoRepo\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\TodoRepo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\TodoRepo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-E:\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.csproj.CoreCompileInputs.cache
-E:\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.MvcApplicationPartsAssemblyInfo.cache
-E:\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.AssemblyInfoInputs.cache
 E:\TodoRepo\obj\Debug\netcoreapp3.1\TodoApi.csproj.CopyComplete
 E:\TodoRepo\obj\Debug\netcoreapp3.1\staticwebassets\TodoApi.StaticWebAssets.Manifest.cache
 E:\TodoRepo\obj\Debug\netcoreapp3.1\staticwebassets\TodoApi.StaticWebAssets.xml
